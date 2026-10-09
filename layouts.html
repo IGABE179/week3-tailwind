@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Gym</title>
+      <script type="module" src="/src/main.js"></script>
+</head>
+<body class="bg-slate-50 text-slate-800">
+  <h1 class="p-6 text-3xl font-bold">Layout Gym</h1>
+
+  <!-- Exercise 1: Nine positions -->
+  <section class="p-6">
+    <h2 class="mb-4 text-2xl font-semibold">Exercise 1 — Nine positions</h2>
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
+      <div>
+        <p class="mb-1 text-sm font-medium">Top Left</p>
+        <div class="flex h-64 justify-start items-start border p-2">
+          <div class="size-12 rounded bg-indigo-500"></div>
+        </div>
+      </div>
+      <div>
+        <p class="mb-1 text-sm font-medium">Top Center</p>
+        <div class="flex h-64 justify-center items-start border p-2">
+          <div class="size-12 rounded bg-indigo-500"></div>
+        </div>
+      </div>
+      <div>
+        <p class="mb-1 text-sm font-medium">Top Right</p>
+        <div class="flex h-64 justify-end items-start border p-2">
+          <div class="size-12 rounded bg-indigo-500"></div>
+        </div>
+      </div>
+      <div>
+        <p class="mb-1 text-sm font-medium">Center Left</p>
+        <div class="flex h-64 justify-start items-center border p-2">
+          <div class="size-12 rounded bg-indigo-500"></div>
+        </div>
+      </div>
+      <div>
+        <p class="mb-1 text-sm font-medium">Center</p>
+        <div class="flex h-64 justify-center items-center border p-2">
+          <div class="size-12 rounded bg-indigo-500"></div>
+        </div>
+      </div>
+      <div>
+        <p class="mb-1 text-sm font-medium">Center Right</p>
+        <div class="flex h-64 justify-end items-center border p-2">
+          <div class="size-12 rounded bg-indigo-500"></div>
+        </div>
+      </div>
+      <div>
+        <p class="mb-1 text-sm font-medium">Bottom Left</p>
+        <div class="flex h-64 justify-start items-end border p-2">
+          <div class="size-12 rounded bg-indigo-500"></div>
+        </div>
+      </div>
+      <div>
+        <p class="mb-1 text-sm font-medium">Bottom Center</p>
+        <div class="flex h-64 justify-center items-end border p-2">
+          <div class="size-12 rounded bg-indigo-500"></div>
+        </div>
+      </div>
+      <div>
+        <p class="mb-1 text-sm font-medium">Bottom Right</p>
+        <div class="flex h-64 justify-end items-end border p-2">
+          <div class="size-12 rounded bg-indigo-500"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Exercise 2: Navbar -->
+  <section class="p-6">
+    <h2 class="mb-4 text-2xl font-semibold">Exercise 2 — Navbar</h2>
+    <nav class="flex items-center justify-between gap-6 rounded-lg bg-white px-6 py-4 shadow">
+      <a href="#" class="text-xl font-bold text-indigo-600">Logo</a>
+      <ul class="flex gap-6">
+        <li><a href="#" class="hover:text-indigo-600">Home</a></li>
+        <li><a href="#" class="hover:text-indigo-600">About</a></li>
+        <li><a href="#" class="hover:text-indigo-600">Services</a></li>
+        <li><a href="#" class="hover:text-indigo-600">Contact</a></li>
+      </ul>
+      <button type="button"
+        class="rounded-md bg-indigo-600 px-4 py-2 font-medium text-white hover:bg-indigo-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-400 focus-visible:ring-offset-2">
+        Sign up
+      </button>
+    </nav>
+  </section>
+
+  <!-- Exercise 3: Comment list -->
+  <section class="p-6">
+    <h2 class="mb-4 text-2xl font-semibold">Exercise 3 — Comment list</h2>
+    <ul class="flex flex-col gap-4">
+      <li class="flex items-start gap-4 rounded-lg bg-white p-4 shadow">
+        <div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-pink-500 font-bold text-white">A</div>
+        <div class="min-w-0">
+          <p class="font-semibold">Aline</p>
+          <p>Great explanation, thank you!</p>
+        </div>
+      </li>
+      <li class="flex items-start gap-4 rounded-lg bg-white p-4 shadow">
+        <div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-emerald-500 font-bold text-white">B</div>
+        <div class="min-w-0">
+          <p class="font-semibold">Brian</p>
+          <p class="break-words">This comment is very long on purpose to prove that the avatar does not shrink when the text grows. Flex items try to shrink to fit their container, so without shrink-0 on the avatar it would get squeezed into an oval. With min-w-0 on the text column, even a very long unbroken word stays inside the card: Supercalifragilisticexpialidociousandevenlongerwordthatkeepsgoingandgoingwithoutanyspaces.</p>
+        </div>
+      </li>
+      <li class="flex items-start gap-4 rounded-lg bg-white p-4 shadow">
+        <div class="flex size-12 shrink-0 items-center justify-center rounded-full bg-amber-500 font-bold text-white">C</div>
+        <div class="min-w-0">
+          <p class="font-semibold">Claudine</p>
+          <p>Can we get the slides after class?</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Exercise 4: Dashboard grid -->
+  <section class="p-6">
+    <h2 class="mb-4 text-2xl font-semibold">Exercise 4 — Dashboard grid</h2>
+    <div class="grid grid-cols-4 auto-rows-[8rem] gap-4">
+      <div class="col-span-2 rounded-lg bg-indigo-100 p-4">Revenue (col-span-2)</div>
+      <div class="row-span-2 rounded-lg bg-pink-100 p-4">Activity (row-span-2)</div>
+      <div class="rounded-lg bg-white p-4 shadow">Users</div>
+      <div class="rounded-lg bg-white p-4 shadow">Orders</div>
+      <div class="rounded-lg bg-white p-4 shadow">Sessions</div>
+      <div class="rounded-lg bg-white p-4 shadow">Bounce rate</div>
+      <div class="rounded-lg bg-white p-4 shadow">Signups</div>
+      <div class="rounded-lg bg-white p-4 shadow">Refunds</div>
+      <div class="rounded-lg bg-white p-4 shadow">Tickets</div>
+      <div class="rounded-lg bg-white p-4 shadow">Messages</div>
+      <div class="col-span-full rounded-lg bg-emerald-100 p-4">Report summary (col-span-full)</div>
+    </div>
+  </section>
+
+  <!-- Exercise 5: Holy grail -->
+  <section class="p-6">
+    <h2 class="mb-4 text-2xl font-semibold">Exercise 5 — Holy grail</h2>
+    <div class="grid min-h-screen grid-cols-[220px_1fr] grid-rows-[auto_1fr_auto] border">
+      <header class="col-span-2 bg-indigo-600 p-4 text-white">Header</header>
+      <aside class="bg-slate-200 p-4">Sidebar (220px)</aside>
+      <main class="bg-white p-4">Main content</main>
+      <footer class="col-span-2 bg-slate-800 p-4 text-white">Footer</footer>
+    </div>
+  </section>
+</body>
+</html>
